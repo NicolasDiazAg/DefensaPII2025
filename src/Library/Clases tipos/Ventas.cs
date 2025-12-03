@@ -17,5 +17,4 @@ public class Ventas
     {
         this.ListaVentas.Add(venta);
     }
-    
 }

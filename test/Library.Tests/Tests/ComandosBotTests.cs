@@ -97,4 +97,14 @@ public class ComandosBotTest
         Assert.That(eliminado, Is.True);
         Assert.That(_fachada.LoginUsuario("paraEliminar", "clave"), Is.Null);
     }
+
+    [Test]
+    public void ListarDisminucion()
+    {
+        Usuario usuario = _fachada.CrearUsuario("nuevoUsuario", "1234");
+        bool vendedor = _fachada.CrearVendedor("nuevoVendedor", "123");
+        
+        bool creado = _fachada.CrearCliente(_usuarioBase, "Juan", "Pérez", "099123456", "juan@test.com");
+        
+    }
 }
